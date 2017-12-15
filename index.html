@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Untitled Document</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/animate.css" />
+</head>
+
+<body id="bd">
+
+  <!-- ====navigation==== -->
+  <nav class="menu-opener">
+    <div class="menu-opener-inner animated bounce"></div>
+  </nav>
+  <nav class="menu">
+    <ul class="menu-inner">
+      <a href="#" class="menu-link">
+        <li>Accueil</li>
+      </a>
+      <a href="#" class="menu-link">
+        <li>Portfolio</li>
+      </a>
+      <a href="#" class="menu-link">
+        <li>Themes</li>
+      </a>
+      <a href="#" class="menu-link">
+        <li>Templates</li>
+      </a>
+      <a href="#" class="menu-link">
+        <li>Contact</li>
+      </a>
+    </ul>
+  </nav>
+
+  <nav id='nav_bar' class="navbar-fixed" style="display:none;">
+    <ul class='nav_links'>
+      <li>
+        <a href="url">Nav Bar</a>
+      </li>
+      <li>
+        <a href="url">Sign In</a>
+      </li>
+      <li>
+        <a href="url">Blog</a>
+      </li>
+      <li>
+        <a href="url">About</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- ====navigation End==== -->
+
+
+  <!-- ======body content====== -->
+  <section class="sec-1"></section>
+  <section class="sec-2"></section>
+  <section class="sec-3"></section>
+  <!-- ======body content====== -->
+
+
+  <!-- =======chat window====== -->
+  <div class="chat-window" id="chat-window" style="display:none;">
+    <div class="chat-head">
+      <p class="title">chat assistant
+        <img src="img/chat.svg" />
+      </p>
+    </div>
+    <div class="chat-body">
+
+
+      <div class="messg-left">
+        <div class="img-wrap">
+          <img src="img/sender.jpg" />
+        </div>
+        <div class="text-left-wrap">
+          <p>sample text sample text sample text sample text sample text sample text </p>
+        </div>
+      </div>
+
+      <div class="messg-right">
+
+        <div class="text-right-wrap">
+          <p>sample text sample text sample text sample text sample text sample text </p>
+        </div>
+      </div>
+
+      <div class="messg-left">
+        <div class="img-wrap">
+          <img src="img/sender.jpg" />
+        </div>
+        <div class="text-left-wrap">
+          <p>sample text sample text sample text sample text sample text sample text </p>
+        </div>
+      </div>
+
+      <div class="messg-right">
+
+        <div class="text-right-wrap">
+          <p>sample text sample text sample text sample text sample text sample text </p>
+        </div>
+      </div>
+
+    </div>
+    <div class="chat-footer">
+
+      <div class="ans-hints" id="ans-hints">
+        <p>yes</p>
+        <p>no,not interested!</p>
+        <p>tell me more</p>
+        <p>tell in brief</p>
+      </div>
+      <div class="input-wrap">
+        <div class="smiley">
+          <img src="img/happy (1).svg" />
+        </div>
+        <div class="text-box">
+          <input type="tetx" placeholder="ask something..." />
+          <button class="btn-send">send</button>
+        </div>
+      </div>
+
+      <div class="upload-wrap">
+        <img src="img/attachment.svg" />
+        <img src="img/image.svg" />
+        <img src="img/like.svg" />
+        <img src="img/dislike.svg" />
+      </div>
+    </div>
+  </div>
+
+
+  <div class="chat-icon" id="chat">
+    <img src="img/question-speech-bubble.png" />
+  </div>
+
+  <!-- =======chat window End====== -->
+
+  <!-- ====footer==== -->
+  <footer id="bdfooter">
+    this is footer
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type='text/javascript' src='js/jquery.mousewheel.min.js'></script>
+  <!-- <script type="text/javascript">
+    $(document).ready(function () {
+      $(".menu-opener").click(function () {
+        $(".menu-opener, .menu-opener-inner, .menu").toggleClass("active");
+      });
+    });
+  </script> -->
+  <!--   <script type="text/javascript">
+    $(document).ready(function () {
+      $('#nav_bar').hide(100);
+      $(window).scroll(function () {
+
+        var scrollValue = ($(window).scrollTop());
+
+        console.log(scrollValue)
+        if ($(window).scrollTop() > 200) {
+          $('#nav_bar').show(300);
+        }
+        if ($(window).scrollTop() < 199) {
+          $('#nav_bar').hide(100);
+        }
+      });
+    });
+  </script> -->
+
+
+
+  <script src="js/toogle-menu.js"></script>
+</body>
+
+</html>
