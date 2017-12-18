@@ -264,8 +264,8 @@ a {
 .chat-icon {
     position: fixed;
     right: 1%;
-    bottom: 25%;
-    width: 70px;
+    bottom: 13%;
+    width: 5%;
 }
 
 .chat-icon img {
@@ -275,8 +275,7 @@ a {
 .chat-window {
     position: fixed;
     right: 7%;
-    bottom: 37%;
-    height: 50vh;
+    bottom: 14%;
     width: 320px;
     z-index: 100;
 }
@@ -302,7 +301,7 @@ a {
 }
 
 .chat-body {
-    height: 45vh;
+    height: 288px;
     padding: 5px;
     background-color: rgba(9, 189, 189, 0.12);
     overflow-x: hidden;
@@ -432,7 +431,6 @@ a {
 }
 
 .chat-footer {
-    min-height: 20vh;
     background-color: #e8e8e8;
     display: flex;
     flex-direction: column;
