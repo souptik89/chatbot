@@ -22,19 +22,27 @@ $(document).ready(function () {
     }
   });
 });
+//chat tooltip show hide
+
+$(document).ready(function () {
+  $('#boticon').hover(function () {
+    $('#tip').toggle(function () {
+      if ($('#tip').hasClass('slideRightReturn')) {
+        $('#tip').removeClass('slideRightReturn');
+        $('#tip').addClass('slideRight');
+      }
+      if ($('#tip').hasClass('slideRight')) {
+        $('#tip').removeClass('slideRight');
+        $('#tip').addClass('slideRightReturn');
+      }
+    })
+  });
+});
 
 //chat window show hide
 $(document).ready(function () {
-  //$('#chat-window').hide();
+
   $('#chat').click(function () {
-    /*  if ($('#chat-window').hasClass('spaceInRight')) {
-      $('#chat-window').removeClass('spaceInRight');
-      $('#chat-window').addClass('spaceOutRight');
-    } else {
-      $('#chat-window').removeClass('spaceOutRight');
-      $('#chat-window').addClass('spaceInRight');
-    }
- */
     $('#chat-window').toggle(function () {
       if ($('#chat-window').hasClass('spaceInRight')) {
         $('#chat-window').removeClass('spaceInRight');
@@ -44,10 +52,7 @@ $(document).ready(function () {
         $('#chat-window').removeClass('spaceOutRight');
         $('#chat-window').addClass('spaceInRight');
       }
-      /*  else {
-        $('#chat-window').removeClass('spaceOutRight');
-        $('#chat-window').addClass('spaceInRight');
-      } */
+
     });
 
   })
