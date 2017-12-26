@@ -6,6 +6,7 @@ $(".menu-opener").click(function () {
   $(".menu-opener, .menu-opener-inner, .menu").toggleClass("active");
 });
 
+
 //navbar show hide on scroll
 $(document).ready(function () {
 
@@ -22,6 +23,9 @@ $(document).ready(function () {
     }
   });
 });
+
+
+
 //chat tooltip show hide
 
 $(document).ready(function () {
@@ -37,6 +41,14 @@ $(document).ready(function () {
       }
     })
   });
+});
+
+//chat icon blink animation
+$(document).ready(function () {
+
+  setInterval(function () {
+    $('.blink').toggleClass("dot")
+  }, 6000);
 });
 
 //chat window show hide
