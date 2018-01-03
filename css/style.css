@@ -266,8 +266,8 @@ a {
 
 .chat-wrap {
     position: fixed;
-    right: 1%;
-    bottom: 13%;
+    right: 20px;
+    bottom: 40px;
     display: flex;
     align-items: center;
 }
@@ -484,8 +484,8 @@ a {
 
 .chat-window {
     position: fixed;
-    right: 6.5%;
-    bottom: 14%;
+    right: 94px;
+    bottom: 50px;
     width: 320px;
     z-index: 100;
 }
@@ -509,13 +509,18 @@ a {
 .chat-head .icons i {
     color: #fff;
     font-size: 20px;
-    margin-right: 10px;
+    margin-left: 10px;
     vertical-align: middle;
     cursor: pointer;
 }
 
+.chat-head .icons i:hover {
+    transform: scale(1.1, 1.1);
+    color: #f1c40f;
+}
+
 .chat-head .icons img {
-    width: 22px;
+    width: 20px;
 }
 
 .chat-body {
