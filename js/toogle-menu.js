@@ -2,15 +2,15 @@
 
 //navbar open close
 
-$(".menu-opener").click(function() {
+$(".menu-opener").click(function () {
     $(".menu-opener, .menu-opener-inner, .menu").toggleClass("active");
 });
 
 
 //navbar show hide on scroll
-$(document).ready(function() {
+$(document).ready(function () {
 
-    $(window).scroll(function() {
+    $(window).scroll(function () {
 
         var scrollValue = ($(window).scrollTop());
 
@@ -28,9 +28,9 @@ $(document).ready(function() {
 
 //chat tooltip show hide
 
-$(document).ready(function() {
-    $('#boticon').hover(function() {
-        $('#tip').toggle(function() {
+$(document).ready(function () {
+    $('#boticon').hover(function () {
+        $('#tip').toggle(function () {
             if ($('#tip').hasClass('slideRightReturn')) {
                 $('#tip').removeClass('slideRightReturn');
                 $('#tip').addClass('slideRight');
@@ -44,18 +44,18 @@ $(document).ready(function() {
 });
 
 //chat icon blink animation
-$(document).ready(function() {
+$(document).ready(function () {
 
-    setInterval(function() {
+    setInterval(function () {
         $('.blink').toggleClass("dot")
     }, 6000);
 });
 
 //chat window show hide
-$(document).ready(function() {
+$(document).ready(function () {
 
-    $('#chat,#cross').click(function() {
-        $('#chat-window').toggle(function() {
+    $('#chat,#cross').click(function () {
+        $('#chat-window').toggle(function () {
             if ($('#chat-window').hasClass('spaceInRight')) {
                 $('#chat-window').removeClass('spaceInRight');
                 $('#chat-window').addClass('spaceOutRight');
@@ -73,8 +73,8 @@ $(document).ready(function() {
 
 //chat hint answer horizontal scroll
 
-$(document).ready(function() {
-    $('#ans-hints').mousewheel(function(e, delta) {
+$(document).ready(function () {
+    $('#ans-hints').mousewheel(function (e, delta) {
         this.scrollLeft -= (delta * 20);
         e.preventDefault();
     });

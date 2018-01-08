@@ -619,6 +619,7 @@ a {
     z-index: 20;
     margin: 0px 0px;
     text-align: left;
+    word-break: break-all;
 }
 
 .chat-body .messg-left .text-left-wrap .istyping {
@@ -683,6 +684,7 @@ a {
     z-index: 1;
     margin: 0px 0px;
     text-align: left;
+    word-break: break-all;
 }
 
 .chat-body .mssg-center {
